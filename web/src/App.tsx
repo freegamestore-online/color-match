@@ -53,7 +53,7 @@ function applyGravity(grid: Cell[][]): Cell[][] {
     let write = ROWS - 1;
     for (let r = ROWS - 1; r >= 0; r--) {
       if (grid[r]![c]) {
-        next[write]![c] = grid[r]![c];
+        next[write]![c] = grid[r]![c]!;
         write--;
       }
     }
